@@ -3,7 +3,6 @@
 
 ### Bump Map
 ![image](https://user-images.githubusercontent.com/88565667/233696131-375254ac-1941-4e42-b127-9b9f4e0c27d5.png)
-![image](https://user-images.githubusercontent.com/88565667/233696197-4bbcf843-230d-4b27-8335-d7a2ae661845.png)
 ![image](https://user-images.githubusercontent.com/88565667/233696250-657f6317-cc7b-4297-948b-c23a7375f302.png)
 
 ![image](https://user-images.githubusercontent.com/88565667/233695450-a15b2398-46ab-46f7-861a-97b1d2067c46.png)
