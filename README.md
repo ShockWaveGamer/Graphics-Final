@@ -1,6 +1,9 @@
 # Graphics Final
 ## Daniel Fiuk - 100834886
 
+# Important
+For the theoretical portion of this exam I answered questions 5 and 6 for the even number students. For the Practical I caught on and answered for the odd numbers. Sorry for the inconvenience.
+
 ### Controls
 WASD - Movement
 Space - Toggle Bloom
