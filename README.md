@@ -18,6 +18,7 @@ We then use that in the surf function to set the albedo with the main texture rg
 And then set the object's normals using the bumpmap and then multiplied with the intensity variable.
 
 NOTE: Unity auto corrected my bumptexture to appear blue and yellow. It still works fine with this change, but my original file was black and white. I used Aseprite to create the brick textures on my own. 
+![Flow](https://user-images.githubusercontent.com/88565667/233711233-21bd040f-a6cc-4441-a0f4-f03829b20b30.png)
 
 ### Mud Water, Overlap + Wave Shader
 ![image](https://user-images.githubusercontent.com/88565667/233702453-25900725-02f4-470c-96bd-9205e2aeee2e.png)
