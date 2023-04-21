@@ -4,6 +4,7 @@
 ### Controls
 WASD - Movement
 Space - Toggle Bloom
+Alt F4 - Quit
 
 ### Bump Map
 ![image](https://user-images.githubusercontent.com/88565667/233696131-375254ac-1941-4e42-b127-9b9f4e0c27d5.png)
