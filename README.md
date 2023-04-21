@@ -37,3 +37,5 @@ NOTE: I used Aseprite again to create the mud and foam textures on my own.
 
 To achive this effect I used upsampling to blur the image recived by the camera. Each interation takes the image and intrapolates it with itself creadting blured edges. The head of the player character has attached to it a lightsource.
 
+NOTE: I made the player model, its from my GDW Group's Game Moonset.
+
