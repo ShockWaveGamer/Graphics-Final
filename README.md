@@ -1,6 +1,10 @@
 # Graphics Final
 ## Daniel Fiuk - 100834886
 
+### Controls
+WASD - Movement
+Space - Toggle Bloom
+
 ### Bump Map
 ![image](https://user-images.githubusercontent.com/88565667/233696131-375254ac-1941-4e42-b127-9b9f4e0c27d5.png)
 ![image](https://user-images.githubusercontent.com/88565667/233696250-657f6317-cc7b-4297-948b-c23a7375f302.png)
