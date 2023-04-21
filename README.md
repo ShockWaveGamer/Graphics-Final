@@ -13,3 +13,14 @@ We then use that in the surf function to set the albedo with the main texture rg
 And then set the object's normals using the bumpmap and then multiplied with the intensity variable.
 
 NOTE: Unity auto corrected my bumptexture to appear blue and yellow. It still works fine with this change, but my original file was black and white. I used Aseprite to create the brick textures on my own. 
+
+### Mud Water, Overlap + Wave Shader
+![image](https://user-images.githubusercontent.com/88565667/233702453-25900725-02f4-470c-96bd-9205e2aeee2e.png)
+![image](https://user-images.githubusercontent.com/88565667/233702491-6b819c61-dda8-4e63-961b-7ea452cc6c1b.png)
+
+![image](https://user-images.githubusercontent.com/88565667/233702372-00998132-52fb-4fea-b749-f9c981962efb.png)
+Assides from initializing the variables...
+In the vertex shader I calculate a new vertex position along an objects y axis using a sin function and time. This value is then addded to the individual vertex to offset it inorder to create the wave pattern. 
+In the fragment shader I continuously offset the uvs of the main and foam textures in a direction set in the inspector. It then adds both texture's colors together to create the overlapping effect. The foam travels in the same direction as the main texture just twice as fast.
+
+NOTE: I used Aseprite again to create the mud and foam textures on my own. 
