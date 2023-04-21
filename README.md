@@ -24,3 +24,11 @@ In the vertex shader I calculate a new vertex position along an objects y axis u
 In the fragment shader I continuously offset the uvs of the main and foam textures in a direction set in the inspector. It then adds both texture's colors together to create the overlapping effect. The foam travels in the same direction as the main texture just twice as fast.
 
 NOTE: I used Aseprite again to create the mud and foam textures on my own. 
+
+### Bloom
+![image](https://user-images.githubusercontent.com/88565667/233706390-85b21d4b-43ee-4702-b0b0-d7125765f423.png)
+
+![image](https://user-images.githubusercontent.com/88565667/233706314-322e73c2-6aad-4ef9-872d-6cb55408570a.png)
+
+To achive this effect I used upsampling to blur the image recived by the camera. Each interation takes the image and intrapolates it with itself creadting blured edges. The head of the player character has attached to it a lightsource.
+
