@@ -24,7 +24,6 @@ Shader "Custom/MudShader"
 		    struct Input {
                 float2 uv_MainTex;
                 float2 uv_FoamTex;
-
 				float3 vertColor;
             };
 
@@ -48,24 +47,24 @@ Shader "Custom/MudShader"
             };
 			
 			void vert (inout appdata v, out Input o){
-				UNITY_INITIALIZE_OUTPUT(Input, o);
-				float t = _Time * _Speed;
-				float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t*2 + v.vertex.y * _Freq*2) * _Amp;
-				v.vertex.y += waveHeight;
+				UNITY_INITIALIZE_OUTPUT(Input, o); 
+				float t = _Time * _Speed; // Colect Time
+				float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t*2 + v.vertex.y * _Freq*2) * _Amp; // Calculate Wave Height
+				v.vertex.y += waveHeight; // Add Wave Height to Vertex
 
-				v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z));
-				o.vertColor = (waveHeight + 0.5);
+				v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z)); // Calculate new normal with wave height
+				o.vertColor = (waveHeight + 0.5); // Calculate color
 			}
 
 			void surf (Input IN, inout SurfaceOutput o){
-				float2 newMainUV = IN.uv_MainTex + float2(_ScrollX, _ScrollY) * _Time;
-				float2 newFoamUV = IN.uv_FoamTex + float2(_ScrollX, _ScrollY) * _Time * 2;
+				float2 newMainUV = IN.uv_MainTex + float2(_ScrollX, _ScrollY) * _Time; // Calculate new UV for main texture
+				float2 newFoamUV = IN.uv_FoamTex + float2(_ScrollX, _ScrollY) * _Time * 2; // Calculate new UV for foam texture
 				
-				float4 mainColor = tex2D(_MainTex, newMainUV);
-				float4 foamColor = tex2D(_FoamTex, newFoamUV);
+				float4 mainColor = tex2D(_MainTex, newMainUV); // Get main texture color
+				float4 foamColor = tex2D(_FoamTex, newFoamUV); // Get foam texture color
 				
-				float4 color = (mainColor + foamColor) / 2;
-				o.Albedo = color * IN.vertColor.rgb;
+				float4 color = (mainColor + foamColor) / 2;	// Calculate color
+				o.Albedo = color * IN.vertColor.rgb; // Apply color
 			}
 			
         ENDCG
